@@ -1,0 +1,55 @@
+<html>
+<head>
+	<title>Gallery</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+		$('#home').click(function(){
+			$('#pictures').load('pages/home.html');
+		});
+		$('#jewellery').click(function(){
+			$('#pictures').load('pages/jewellery.html');
+		});
+
+		$('#flowers').click(function(){
+			$('#pictures').load('pages/flowers.html');
+		});
+		$('#wedding').click(function(){
+			$('#pictures').load('pages/wedding.html');
+		});
+
+	});
+	</script>
+	
+	<link rel="stylesheet" type="text/css" href="css/Gallery.css">
+</head>
+	<body>
+		<header><h3>PHOTO GALLERY</h3></header>
+		<div id="container">
+			<nav>
+				<ul class="sidebar-nav">
+					<li>
+						<a id="home" href="#">Home</a>
+					</li>
+					<li>
+						<a id="jewellery" href="#">Jewellery</a>
+					</li>
+					<li>
+						<a id="wedding" href="#">Wedding</a>
+					</li>
+					<li>
+						<a id="flowers" href="#">Flowers</a>
+					</li>
+				</ul>
+			</nav>
+		<section>
+			<div id="pictures">
+				<img class="welcomeImage" src="images/home/LordVenkateswara.jpg">
+			</div>
+		</section>
+</div><!--container div-->
+
+		<footer>Copyright &copy; gallery.com</footer>
+	</body>
+</div>
+</html>
